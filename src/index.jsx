@@ -5,5 +5,6 @@ const root = createRoot(document.getElementById("root")).render(<App/>)
 
 
 
-/* Sì è possibile utilizzare più di una volta il componente Hello all'interno del componente App.
- Ad esempio, in questo caso “Hello, World!” viene stampato due volte. */
+/* Sì, è possibile eseguire il rendering del componente Message all'interno del componente App,
+infatti in questo caso viene stampato il contenuto sia di <Hello/> che di <Message/>.
+*/
