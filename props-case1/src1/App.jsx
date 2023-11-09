@@ -18,5 +18,5 @@ non è stato specificato*/
 
 // nel secondo caso invece viene passato un prop.name, ovvero name="Alex", per cui sulla pagina, in quest'esempio, viene stampato "Welcome Alex!"
 
-/* dunque, dal momento che qui abbiamo inserito entrambi i paragrafi, in console vengono stampati entrambi i risultati 
-(ovvero sia "Welcome!" che "Welcome Alex!") */
+/* dunque, in questo caso, sulla pagina vengono stampati entrambi i risultati 
+(ovvero sia "Welcome !" che "Welcome Alex!") */
