@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { GithubUser } from "./GithubUser";
 
 export function GithubUsers() {
@@ -12,7 +12,7 @@ export function GithubUsers() {
         setUsers((listUsers) => [...listUsers, userData]);
       })
       .catch((error) => {
-        console.error("Error fetching user data:", error);
+        console.error("Error fetch", error);
       });
   };
 
