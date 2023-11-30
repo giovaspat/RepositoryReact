@@ -22,14 +22,21 @@ export function App() {
    return (
      <div>
        <ul>
-         <li><button onClick={handleGithubUserLink}> Github User Info</button></li>
-         <li><button onClick={handleCounterLink}>Try the counter</button></li>
-         <li><button onClick={handleWelcomeLink}>Say Welcome to Alex</button></li>
+         <li>
+           <button onClick={handleGithubUserLink}> Github User Info</button>
+         </li>
+         <li>
+           <button onClick={handleCounterLink}>Try the counter</button>
+         </li>
+         <li>
+           <button onClick={handleWelcomeLink}>Say Welcome to Alex</button>
+         </li>
        </ul>
        <Routes>
          <Route path="users/:username" element={<ShowGithubUser />} />
          <Route path="/counter" element={<Counter />} />
          <Route path="/welcome" element={<Welcome name="Alex" />} />
+         <Route path="*" element={<div><h1>Page Not Found</h1></div>} />
        </Routes>
      </div>
    );
